@@ -1,0 +1,15 @@
+/***************************************
+
+脚本功能：华宝
+**************************************
+
+[rewrite_local]
+
+#掘金解锁
+^(https:\/\/vpclient-api\.tangbulainfo\.com\/huabao\/v1\.0\/research\/check-product\?productType=RESEARCH)$ url script-response-body https://raw.githubusercontent.com/nchao/quantumultxJS/main/huabao/Tangbulainfo.js
+
+[mitm]
+
+hostname = *tangbulainfo*
+
+***************************************/
